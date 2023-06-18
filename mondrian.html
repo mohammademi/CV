@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      background-color: black;
+      height:756px;
+      width: 748px;
+      display: grid;
+      grid-template-columns: 329px 207px 162px 50px;
+      grid-template-rows: 432px 140px 164px 20px;
+    }
+    .red-box {
+      background-color: red;
+      margin-right: 9px;
+      margin-bottom: 9px;
+    }
+    .blank-one {
+      background-color: #F0F1EC;
+      grid-column-start: span 3;
+      margin-bottom: 9px;
+    }
+    .blank-two {
+      background-color:#F0F1EC;
+      grid-row: span 2;
+      margin-right: 9px;
+      margin-bottom: 9px;
+    }
+    .blank-three {
+      background-color: #F0F1EC;
+      grid-column: span 2;
+      grid-row: span 2;
+      margin-bottom: 9px;
+      margin-right: 9px;
+    }
+    .blue-box {
+      background-color: blue;
+      border-style: none none solid none;
+      border-width: 10px;
+      border-color: black;
+    }
+    .blank-four {
+      background-color: #F0F1EC;
+      grid-area: 3/4/5/5;
+    }
+    .blank-five {
+      background-color: #F0F1EC;
+      margin-right: 9px;
+    }
+    .yellow-box {
+      background-color: yellow;
+      margin-right: 9px;
+    }
+    .grey-box {
+      background-color: grey;
+      margin-right: 9px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="red-box"></div>
+    <div class="blank-one"></div>
+    <div class="blank-two"></div>
+    <div class="blank-three"></div>
+    <div class="blue-box"></div>
+    <div class="blank-four"></div>
+    <div class="blank-five"></div>
+    <div class="yellow-box"></div>
+    <div class="grey-box"></div>
+
+  </div>
+</body>
+
+</html>
